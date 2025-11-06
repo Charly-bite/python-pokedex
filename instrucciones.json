@@ -1,0 +1,87 @@
+{
+  "actividad": {
+    "titulo": "Estructura de Datos en Python: Listas y Diccionarios",
+    "tema": "Proyecto Pokédex",
+    "objetivo": "Aprender a manipular colecciones de datos complejos en Python utilizando listas de diccionarios, implementando funciones para crear, leer, y eliminar información.",
+    "conceptos_clave": [
+      {
+        "concepto": "Diccionario en Python",
+        "descripcion": "Un diccionario es una estructura de datos que almacena elementos en pares clave-valor. Se definen dentro de llaves {}.",
+        "sintaxis": "{ \"clave\": \"valor\" }",
+        "ejemplo_basico": {
+          "codigo": [
+            "diccionario = {",
+            "  \"clave1\": \"valor1\",",
+            "  \"clave2\": \"valor2\",",
+            "  \"clave3\": \"valor3\"",
+            "}",
+            "print(diccionario)"
+          ]
+        },
+        "ejemplo_aplicado": {
+          "nombre": "Datos de un Pokémon",
+          "codigo": [
+            "pokemon = {\"nombre\": \"Pikachu\", \"tipo\": \"Eléctrico\", \"nivel\": 12}",
+            "print(pokemon[\"nombre\"])  # Salida: Pikachu",
+            "print(pokemon[\"tipo\"])    # Salida: Eléctrico"
+          ]
+        }
+      },
+      {
+        "concepto": "Listas con Diccionarios",
+        "descripcion": "Una lista puede contener múltiples diccionarios, lo cual es útil para agrupar y gestionar colecciones de objetos con las mismas propiedades.",
+        "ejemplo": {
+          "codigo": [
+            "persona1 = {\"nombre\": \"Ana\", \"ciudad\": \"Madrid\"}",
+            "persona2 = {\"nombre\": \"Luis\", \"ciudad\": \"Monterrey\"}",
+            "",
+            "# Lista de diccionarios",
+            "personas = [persona1, persona2]",
+            "print(personas)"
+          ]
+        }
+      },
+      {
+        "concepto": "Búsqueda en una Lista de Diccionarios",
+        "descripcion": "Para encontrar un diccionario específico dentro de una lista, se puede iterar sobre la lista con un bucle 'for' y comparar el valor asociado a una clave.",
+        "ejemplo": {
+          "codigo": [
+            "nombre_a_buscar = input(\"Ingresa el nombre del Pokémon: \")",
+            "",
+            "for pokemon in pokedex:",
+            "  if pokemon[\"nombre\"] == nombre_a_buscar:",
+            "    print(\"Pokémon encontrado:\", pokemon)"
+          ]
+        }
+      }
+    ],
+    "ejercicio_practico": {
+      "titulo": "Creación de una Pokédex",
+      "descripcion": "Desarrollar un programa de consola que funcione como una Pokédex, permitiendo al usuario agregar, consultar y eliminar Pokémon de una lista.",
+      "requisitos": [
+        "1. Definir una lista global vacía al inicio del programa para almacenar los Pokémon.",
+        "2. Implementar 3 funciones:",
+        {
+          "funcion_agregar": "Pide al usuario los datos de un Pokémon (nombre, tipo, PS - Puntos de Salud) y lo añade como un nuevo diccionario a la lista global.",
+          "funcion_ver_todos": "Recorre la lista de Pokémon con un bucle 'for' y muestra en pantalla la información de cada uno.",
+          "funcion_eliminar": "Pide al usuario el nombre de un Pokémon, lo busca en la lista y, si lo encuentra, lo elimina."
+        },
+        "3. En el flujo principal del programa, usar un bucle 'while' para mostrar continuamente un menú de opciones.",
+        "4. El menú debe permitir al usuario elegir qué función ejecutar (agregar, ver, eliminar) o salir del programa.",
+        "5. El programa debe finalizar cuando el usuario seleccione la opción de salir."
+      ],
+      "menu_ejemplo": [
+        "**** Menú Pokédex ****",
+        "1. Agregar Pokémon",
+        "2. Borrar Pokémon",
+        "3. Consultar Pokédex",
+        "4. Salir"
+      ],
+      "estructura_datos_pokemon": {
+        "nombre": "String",
+        "tipo": "String",
+        "ps": "Integer"
+      }
+    }
+  }
+}
