@@ -133,17 +133,12 @@ GET https://pokeapi.co/api/v2/pokemon/{id or name}
 
 ## 🤝 Contribuciones
 
-Las contribuciones son bienvenidas! Por favor:
-
-1. Haz fork del proyecto
-2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
-3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abre un Pull Request
+Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for pull request guidelines and how to set up development, and adhere to [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) in all community interactions.
 
 ## 📝 Licencia
 
-Este proyecto es de código abierto y está disponible bajo la licencia MIT.
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+
 
 ## 👨‍💻 Autor
 
